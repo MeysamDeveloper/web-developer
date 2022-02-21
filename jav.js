@@ -21,9 +21,12 @@ for(i=0; i< closeb.length; i++){
 var list = document.querySelector('ul')
 list.addEventListener('click' ,function(ev){
     if(ev.target.tagName ==='LI'){
+        alert('this field can nit be empty');
         ev.target.classList.toggle('checked')
+
     }
 },false)
+
 
 function newElement(){
     var li = document.createElement('li')
@@ -38,8 +41,9 @@ function newElement(){
     }
     document.getElementById('item').value='';
 
-    var span = document.createElement('SPAN');
-    var txt = document.createTextNode('/u00d7');
+    var span = document.createElement('SPAN')
+    var txt = document.createTextNode('\u00d7');
+    span.className ='close'
     span.appendChild(txt);
     li.appendChild(span);
 
