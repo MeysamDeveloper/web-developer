@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 60%;
+    background-color: white;
+    align-self: center;
+    display:block;
+    margin:120px auto;
+    box-shadow: 5x 10px 20px black;
+}
+ul{
+    margin: 2;
+    border-left:4px solid teal;
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    cursor: pointer;
+    border-bottom:2px solid white;
+    position: relative;
+    padding:20px 10px 20px 40px;
+    background: whitesmoke;
+    font-size: 18px;
+    transition: 0.2s;
+    user-select: none;
+}
+ul li:hover{
+    background-color: #ddd;
+    
+
+}
